@@ -1,0 +1,66 @@
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: raleway, sans-serif
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.grid
+	display: grid
+
+.orange-button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: #f7a26c
+	padding: 10px 60px
+	font-size: 20px
+	font-weight: 800
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: 0
+	-webkit-transition: background-color .1s ease
+	-o-transition: background-color .1s ease
+	transition: background-color .1s ease
+	cursor: pointer
+	&:hover
+		background-color: #4b5a65
+
+section, header, footer
+	width: 100%
+	text-align: center
+	color: grey
+
+.container
+	//display: table-cell // see above
+	vertical-align: middle
+	max-width: 1200px
+	margin: 0 auto
+	padding-bottom: 2rem
+
+// ===============
+
+h1, h2
+	margin: 0
+
+section
+	background-color:  #ededed
