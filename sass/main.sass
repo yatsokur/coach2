@@ -135,19 +135,19 @@
           color: #f7a26c
           transition: all .5s ease
     .lang-menu
-      display: none
-      //align-items: center
-      //text-align: right
-      //margin: 1.1rem
-      //transition: all .5s ease
-      //.lang_label
-      //  color: white
-      //  font-weight: 700
+      align-items: center
+      text-align: right
+      margin: 1.1rem
+      transition: all .5s ease
+      .lang_label
+        color: white
+        font-weight: 700
 
 //header
 .main-header
   background: #ededed
-  height: 100%
+  min-height: 100vh
+  padding-bottom: 0px
   //position: relative
   //top: 0
   //overflow: hidden
@@ -172,9 +172,9 @@
   //  background-color: black
   //  opacity: .5
   .container
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1.2fr
     grid-auto-rows: 100vh //разобраться как увеличить
-    grid-gap: 3rem
+    max-width: none
     .tagline
       align-self: center
       .header-h1
@@ -205,35 +205,33 @@
       background-position: top //отрезает не только слева, ПОФИКСИТЬ
       background-repeat: no-repeat
 
-
-
 .about
-  position: relative
+  //position: relative
   background: #958b72
-  background-position: center top
-  overflow: hidden
-  background-size: cover
-  -webkit-background-size: cover
-  background-repeat: no-repeat
-  -o-background-size: cover
-  -moz-background-size: cover
-  min-height: 100vh
-  color: white
-  z-index: 1
-  justify-content: center
-  &::before
-    z-index: -1
-    content: ''
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
+  //background-position: center top
+  //overflow: hidden
+  //background-size: cover
+  //-webkit-background-size: cover
+  //background-repeat: no-repeat
+  //-o-background-size: cover
+  //-moz-background-size: cover
+  min-height: 70vh
+  //color: white
+  //z-index: 1
+  //justify-content: center
+  //&::before
+  //  z-index: -1
+  //  content: ''
+  //  position: absolute
+  //  top: 0
+  //  right: 0
+  //  bottom: 0
+  //  left: 0
     //background-color: rgba(70,80,90,.7)
   .container
     h2
       color: white
-      margin-top: 10vh
+      padding-top: 20px
       border-width: 5px
       font-size: 50px
     p
@@ -243,99 +241,23 @@
       text-align: left
       padding: 1.3rem 3rem
 
-//.team
-  background-color: rgba(240,240,240,.5)
-  height: auto
-  .container
-    grid-template-columns: 1fr 2fr
-    grid-gap: 3rem
-    padding: 30px
-    color: black
-    .team__title
-      font-size: 3rem
-      grid-column: 2/3
-      margin: 0
-      text-align: left
-      padding-left: 1rem
-      color: #f7a26c
-    .team__picture
-      border-radius: 50%
-      background: black
-      height: 25rem
-      img
-        width: 25rem
-        border-radius: 50%
-        transition: opacity .5s ease
-        &:hover
-          opacity: .7
-          background-color: #000
-          cursor: pointer
-    .team__description
-      grid-auto-rows: min-content
-      text-align: left
-      margin: auto 0
-      padding: 0 20px
-      h3
-        margin: 0 0 10px
-        font-size: 2rem
-      h5
-        font-size: 1.5rem
-        margin: 0 0 1rem
-        color: gray
-        line-height: 1
-      .team__social
-        grid-template-columns: repeat(3, 50px)
-        grid-gap: 5px
-        img
-          width: 4rem
-          height: 4rem
-          padding: 10px 10px 10px 0
-          &:hover
-            cursor: pointer
-    .bio
-      grid-column: 2/3
-      text-align: left
-      padding: 0 0 0 20px
-      margin: 0
-      border-left: solid #f7a26c 2px
-      .more
-        color: gray
-        transition: all .5s ease-in-out
-        font-family: sans-serif
-        font-weight: 700
-        &:hover
-          color: #f7a26c
-          cursor: pointer
-      .three-dots
-        transition: all .5s ease
-      .extension
-        display: none
-        transition: display .5s ease
-      li
-        position: relative
-        list-style-type: none
-        margin-bottom: 13px
-        font-size: 14px
-        font-family: sans-serif
-        margin-left: -1.4px
-        &::after
-          content: ''
-          position: absolute
-          background: #f7a26c
-          height: 15px
-          width: 15px
-          border-radius: 50%
-          left: -20px
-          transform: translateX(-50%)
-          top: 3px
 .services
+  background-color: #e7e7dc
+  .services-title
+    font-size: 50px
+    padding-top: 20px
+    padding-bottom: 3rem
   .container
     grid-template-columns: 1fr 1fr
-    grid-template-rows: auto auto
+    grid-template-rows: auto
     grid-gap: 2em
     font-size: 20px
     .psycho-couching
+      h4
+        padding-bottom: 3rem
       text-align: center
+      li
+        text-align: left
     .autor-training
       text-align: center
       list-style-type: disc
@@ -389,15 +311,21 @@
       margin: 2rem 0 2rem
       grid-column: 1/4
 .contacts
-  font-size: 40px
   color: white
   background-color: #3d5c6f
+  h2
+    color: white
+    padding-top: 20px
+    border-width: 5px
+    font-size: 50px
   .container
     grid-template-columns: 1fr 1fr
     .contacts__text
       font-size: 20px
       font-weight: 600
-    //.contacts__icons
+    .contacts__icons
+      grid-template-columns: 1fr 1fr 1fr
+      align-self: center
 
 
   .footer-copy
