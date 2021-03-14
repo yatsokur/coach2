@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>CoachPartner</title>
+
+<!--    <meta name="description" content="">-->
+
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+<!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+
+<!--    <meta property=”og:title” content=”A15” />-->
+<!--    <meta property=”og:url” content=”https://a15.org.ua” />-->
+<!--    <meta property=”og:description” content= ”Ви інформуєте, ми — захищаємо.” />-->
+<!--    <meta property=”og:image” content=”img/media-logo.png”/>-->
+<!--    <meta property=”og:type” content=”article” />-->
+<!--&lt;!&ndash;twitter&ndash;&gt;-->
+<!--    <meta property=”twitter:title” content=”A15” />-->
+<!--    <meta property=”twitter:url” content=”https://a15.org.ua” />-->
+<!--    <meta property=”twitter:description” content= ”Ви інформуєте, ми — захищаємо.” />-->
+<!--    <meta property=”twitter:image” content=”img/media-logo.png”/>-->
+
+
+
+</head>
+
+<body>
+<!--scroll to Top button-->
+<div id="scrollTop" class="scrollTop" onclick="scrollUp()" style="display: none">вверх</div>
+
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="css/burger/burger.css">
+
+<!--nav-->
+<nav class="navbar" id="navbar">
+    <div class="navigation grid">
+        <div class="logo"></div>
+        <div class="menu">
+            <a href="#about">Обо мне</a>
+            <a href="#team">Услуги</a>
+            <a href="https://" target="_blank">Блог</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+        <!-- language switcher -->
+        <div class="lang-menu">
+            <!--            <label class="lang_label" for="languages">Мова:</label>-->
+            <select id="languages" name="languages" onChange="window.location.href=this.value">
+                <option value="ru" selected>ru</option>
+                <option value="ua/index.html">ua</option>
+                </select>
+        </div>
+        <!-- hamburger menu-->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#about">Обо мне</a></li>
+                <li><a class="menu__item" href="#team">Услуги</a></li> <!--переименовать-->
+                <li><a class="menu__item" href="https://" target="_blank">Блог</a></li>
+                <li><a class="menu__item" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--./nav-->
+<header class="main-header">
+    <div class="container grid">
+        <div class="tagline">
+            <p><span class="header-h1">Всё проще, чем кажется!</span></p> <!--<span class="blinking-cursor">|</span>-->
+            <a href="#about"> <!-- тут должна быть всплывающая Форма записи-->
+                <div class="orange-button">Запись на сессию</div>
+            </a>
+        </div>
+        <div class="header-content"></div>
+    </div>
+</header>
+<!--section about-->
+<section class="about" id="about">
+<!--    <img src="img/media-logo.png" alt="" style="width: 0; height: 0;">-->
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Ирина Лапина. Я – магистр психологии и профессиональный коуч, сертифицированный по международным стандартам ICF.
+            Работа с людьми – мое призвание.
+        </p>
+        <p>В своей практике я использую навыки и знания из коучинга,
+            психоаналитики, квантовой психологии нейро-лингвистического программирования,
+            когнитивно-поведенческой и позитивной психотерапии.
+        </p>
+        <p>Для каждого клиента применяю персональный и уникальный коктейль из этих знаний.
+        </p>
+    </div>
+</section>
+<!--section footer-->
+<section class="services grid">
+    <h3 class="services-title">Услуги</h3>
+    <div class="container grid">
+        <div class="psycho-couching">
+            <h4>Психология и коучинг</h4>
+            <p>Полная конфиденциальность<br>
+                Первая сессия – бесплатно<br>
+                Онлайн или очно (Киев)<br>
+            </p>
+
+        </div>
+        <ul class="autor-training">
+            <h4>Авторские тренинги</h4>
+            <p>Корпоративные:
+            <li>обучение тонкостям работы в luxury и premium сегментах</li>
+            <li>развитие эмоционального интеллекта</li>
+            <li>обучение искусству продаж</li>
+            </p>
+            <p>Личные:<br>
+            <li>гармонизация личных отношений</li>
+            <li>раскрытие таланта любить свою жизнь</li>
+            <li>повышение личной ценности</li>
+            </p>
+        </ul>
+        <div class="orange-button">Запись на сессию</div>
+        <div class="orange-button">Оставить заявку</div> <!--дубль кноки Зпись на сессию-->
+    </div>
+</section>
+
+<footer class="contacts grid" id="contacts">
+    <h4>Контакты</h4>
+        <div class="container grid">
+            <div class="contacts__text">
+                <p>Все лучшее в жизни с нами происходит случайно.<br>
+                    Но для того, чтобы эта случайность произошла,<br>
+                    нужно позволить ей случиться.
+                </p>
+            </div>
+                <div class="contacts__icons grid">
+                    <a class='mail' href="mailto:office@a15.org.ua">
+                        <img src="img/mail.svg" alt="" class="contacts__social-mail">
+                    </a>
+                    <a href="https://twitter.com/a15org " target="_blank" class="contacts__social-tw">
+                        <img src="img/Twitter-white.svg"
+                             class='social-item contacts__social-tw-icon'
+                             alt="">
+                    </a>
+                    <div href="https://t.me/a15org" target="_blank" class="contacts__social-tele">
+                        <img src="img/Telegram-white.svg"
+                             class='social-item contacts__social-tele-icon'
+                             alt="">
+                    </div>
+                </div>
+        </div>
+    <div class="footer-copy">Все права защищены. Coach Partner ©</div>
+</footer>
+
+
+
+<!--./section contacts-->
+
+<!-- lower footer -->
+<!--<footer class="lower-footer">-->
+<!--    <div class="container">-->
+<!--        <div class="footer-copy">Всі права захищені. a15 ©</div>-->
+<!--    </div>-->
+<!--</footer>-->
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
