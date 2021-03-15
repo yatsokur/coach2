@@ -59,11 +59,11 @@
       //color: white
       //padding: 1rem
       //margin-left: 50px
-      //align-content: center
-      //font-size: 35px
-      //font-family: sans-serif
-      //transition: font-size .5s ease
-      //border-radius: 25px
+    //align-content: center
+    //font-size: 35px
+    //font-family: sans-serif
+    //transition: font-size .5s ease
+    //border-radius: 25px
     .menu
       padding: 1.5rem 0
       text-align: right
@@ -84,15 +84,38 @@
         &:active
           color: #f7a26c
           transition: all .5s ease
-    .lang-menu
+      .button
+      //border: none
       align-items: center
-      text-align: right
-      margin: 1.1rem
-      padding: 1rem
-      transition: all .5s ease
-      .lang_label
-        color: white
-        font-weight: 700
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s
+      cursor: pointer
+      .RU
+        width: 48px
+        height: 32px
+        background-image: url("app/img/Flag-RU.png")
+        background-repeat: no-repeat
+      &:hover
+
+        background: black
+      .UA
+        width: 48px
+        height: 32px
+        background-image: url("app/img/Flag-UA.png")
+        background-repeat: no-repeat
+      //.UA:hover
+        opacity: 50%
+        background: blue
+
+    //.lang-menu
+    //  align-items: center
+    //  text-align: right
+    //  margin: 1.1rem
+    //  padding: 1rem
+    //  transition: all .5s ease
+    //  .lang_label
+    //    color: white
+    //    font-weight: 700
 
 .navbar-onscroll //доработать отступ сверху от лого и прыгающее меню языков
   background: rgb(231, 231, 220)
@@ -103,7 +126,7 @@
   line-height: 2
   transition: all .5s ease-out
   font-family: Arial;
-  font-size: 41px;
+  //font-size: 41px;
   color: #FFFFFF;
   .navigation
     grid-template-columns: 3fr 6fr 1fr
