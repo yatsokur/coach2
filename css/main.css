@@ -42,7 +42,7 @@ body {
   border: none;
   color: #fff;
   text-decoration: none;
-  background-color: #f7a26c;
+  background-color: #aa7521;
   padding: 10px 60px;
   font-size: 20px;
   font-weight: 800;
@@ -64,8 +64,8 @@ section, header, footer {
 
 .container {
   vertical-align: middle;
-  margin: 0 auto;
-  padding-bottom: 2rem; }
+  margin: 0 auto;}
+  /*padding-bottom: 2rem; }*/
 
 h1, h2 {
   margin: 0; }
@@ -160,7 +160,8 @@ section {
       text-align: right;
       margin: 1.1rem;
       padding: 1rem;
-      transition: all .5s ease; }
+      transition: all .5s ease;
+      text-decoration: none;}
       .navbar .navigation .lang-menu .lang_label {
         color: white;
         font-weight: 700; }
@@ -220,7 +221,8 @@ section {
       align-items: center;
       text-align: right;
       margin: 1.1rem;
-      transition: all .5s ease; }
+      transition: all .5s ease;
+      text-decoration: none;}
       .navbar-onscroll .navigation .lang-menu .lang_label {
         color: white;
         font-weight: 700; }

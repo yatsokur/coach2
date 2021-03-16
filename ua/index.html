@@ -6,28 +6,31 @@
     <meta charset="utf-8">
 
     <title>CoachPartner</title>
-<!--    <meta name="description" content="">-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
-<!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+    <!--    <meta name="description" content="">-->
 
-<!--    <meta property=”og:title” content=”A15”/>-->
-<!--    <meta property=”og:url” content=”https://a15.org.ua”/>-->
-<!--    <meta property=”og:description” content=”Ви інформуєте, ми — захищаємо.”/>-->
-<!--    <meta property=”og:image” content=”img/media-logo.png”/>-->
-<!--    <meta property=”og:type” content=”article”/>-->
-<!--    &lt;!&ndash;twitter&ndash;&gt;-->
-<!--    <meta property=”twitter:title” content=”A15”/>-->
-<!--    <meta property=”twitter:url” content=”https://a15.org.ua”/>-->
-<!--    <meta property=”twitter:description” content=”Ви інформуєте, ми — захищаємо.”/>-->
-<!--    <meta property=”twitter:image” content=”img/media-logo.png”/>-->
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <!--    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+
+    <!--    <meta property=”og:title” content=”A15” />-->
+    <!--    <meta property=”og:url” content=”https://a15.org.ua” />-->
+    <!--    <meta property=”og:description” content= ”Ви інформуєте, ми — захищаємо.” />-->
+    <!--    <meta property=”og:image” content=”img/media-logo.png”/>-->
+    <!--    <meta property=”og:type” content=”article” />-->
+    <!--&lt;!&ndash;twitter&ndash;&gt;-->
+    <!--    <meta property=”twitter:title” content=”A15” />-->
+    <!--    <meta property=”twitter:url” content=”https://a15.org.ua” />-->
+    <!--    <meta property=”twitter:description” content= ”Ви інформуєте, ми — захищаємо.” />-->
+    <!--    <meta property=”twitter:image” content=”img/media-logo.png”/>-->
+
 
 
 </head>
 
 <body>
 <!--scroll to Top button-->
-<div id="scrollTop" class="scrollTop" onclick="scrollUp()" style="display: none">вверх</div>
+<div id="scrollTop" class="scrollTop" onclick="scrollUp()" style="display: none">вгору</div>
 
 <link rel="stylesheet" href="css/main.min.css">
 <link rel="stylesheet" href="css/burger/burger.css">
@@ -35,21 +38,25 @@
 <!--nav-->
 <nav class="navbar" id="navbar">
     <div class="navigation grid">
-        <div class="logo"><a href="#"><span class="logo-a">a</span><span class="logo-15">15</span></a></div>
+        <div class="logo"></div>
         <div class="menu">
             <a href="#about">Про мене</a>
-            <a href="#team">Послуги</a>
+            <a href="#services">Послуги</a>
             <a href="https://" target="_blank">Блог</a>
             <a href="#contacts">Контакти</a>
         </div>
-        <!-- language switcher -->
         <div class="lang-menu">
-            <!--            <label class="lang_label" for="languages">Мова:</label>-->
-            <select id="languages" name="languages" onChange="window.location.href=this.value">
-                <option value="../">ua</option>
-                <option value="/" selected>ru</option>
-            </select>
+            <a href="index.html" class>RU</a>
+            <a href="ua/index.html" class>UA</a>
         </div>
+        <!-- language switcher -->
+        <!--        <div class="lang-menu">-->
+        <!--            &lt;!&ndash;            <label class="lang_label" for="languages">Мова:</label>&ndash;&gt;-->
+        <!--            <select id="languages" name="languages" onChange="window.location.href=this.value">-->
+        <!--                <option value="ru" selected>ru</option>-->
+        <!--                <option value="ua/index.html">ua</option>-->
+        <!--                </select>-->
+        <!--        </div>-->
         <!-- hamburger menu-->
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox"/>
@@ -58,7 +65,7 @@
             </label>
             <ul class="menu__box">
                 <li><a class="menu__item" href="#about">Про мене</a></li>
-                <li><a class="menu__item" href="#team">Послуги</a></li>
+                <li><a class="menu__item" href="#team">Послуги</a></li> <!--переименовать-->
                 <li><a class="menu__item" href="https://" target="_blank">Блог</a></li>
                 <li><a class="menu__item" href="#contacts">Контакти</a></li>
             </ul>
@@ -67,155 +74,102 @@
 </nav>
 
 <!--./nav-->
-<header class="main-header grid">
-    <div class="header-content">
-        <p><span class="header-h1">Все простіше, ніж здається!</span><span class="blinking-cursor">|</span></p>
-        <a href="#about">
-            <div class="orange-button">Запис на сесію</div>
-        </a>
+<header class="main-header">
+    <div class="container grid">
+        <div class="tagline">
+            <p><span class="header-h1">Все простіше, ніж здається!</span></p> <!--<span class="blinking-cursor">|</span>-->
+            <a href="#about"> <!-- тут должна быть всплывающая Форма записи-->
+                <div class="orange-button">Запис на сесію</div>
+            </a>
+        </div>
+        <div class="header-content"></div>
     </div>
 </header>
 <!--section about-->
 <section class="about" id="about">
-    <img src="img/media-logo.png" alt="" style="width: 0; height: 0;">
+    <!--    <img src="img/media-logo.png" alt="" style="width: 0; height: 0;">-->
     <div class="container">
-        <h2>О НАС</h2>
-        <p>А15 &mdash; это команда адвокатов с более чем 10-летним профессиональным опытом, которые защищают свободу
-            слова и побеждают цензуру. Наше имя — это статья 15 Конституции, которая запрещает цензуру в нашей стране.
-            Наше имя отражает наши усилия по развитию свободного и разнообразного украинского общества, построенного на
-            свободе слова и плюрализме мнений. Мы верим, что это невозможно без гарантированной защищённости и
-            приватности, как в реальной жизни, так и онлайн.</p>
-        <p>Наше адвокатское объединение «А15» концентрируется на представительстве интересов в делах, связанных со
-            свободой слова и защитой от цензуры, цифровой безопасностью и приватностью, в то время как созданный им
-            благотворительный фонд предоставляет бесплатные консультации и помощь журналистам, блогерам, активистам и
-            всем тем, чей голос не слышен, и кто стал жертвами цензуры.</p>
+        <h2>Про мене</h2>
+        <p>Мене звуть Ірина Лапіна. Я – магістр психології та професійний коуч, сертифікований за міжнародними стандартами ICF.
+            Робота з людьми – моє покликання.
+        </p>
+        <p>У своїй практиці я використовую навички та знання з коучингу,
+            психоаналітики, квантової психології, нейролінгвістичного програмування,
+            когнітивно-поведінкової та позитивної психотерапії.
+        </p>
+        <p>Для кожного клієнта застосовую персональний та унікальний коктейль з цих знань.
+        </p>
     </div>
 </section>
-<!--./section about-->
 
-<section class="team" id="team">
+<!--section footer-->
+<section class="services grid">
+    <h2 class="services-title">Послуги</h2>
     <div class="container grid">
-        <h3 class="team__title">Команда</h3>
-        <div class="team__picture dmytro"><a href="https://erau.unba.org.ua/profile/34810" target="_blank"><img
-                src="img/Dmytro.jpg" alt=""></a></div>
-        <div class="team__description">
-            <h3>Дмитрий Мазурок</h3>
-            <h5>Управляющий партнёр</h5>
-            <div class="team__social grid">
-                <a href="https://erau.unba.org.ua/profile/34810" target="_blank"><img src="img/erau.svg" alt=""
-                                                                                      class='team__social-unba'></a>
-                <a href="https://www.facebook.com/dmytro.mazurok" target="_blank"><img src="img/Facebook.svg"
-                                                                                       class='team__social-fb'
-                                                                                       alt=""></a>
-                <a href="https://www.linkedin.com/in/dmytromazurok/" target="_blank"><img src="img/Linkedin.svg" alt=""
-                                                                                          class='team__social-in'></a>
-            </div>
-            <ul class="bio">
-                <li>2021 &mdash; ведет стратегические судебные дела для Харьковской правозащитной группы</li>
-                <li>2019&ndash;2020 &mdash; руководитель проекта по противодействию торговле людьми Харьковской
-                    правозащитной группы
-                </li>
-                <span class="more">Больше...</span>
-                <span class="extension">
-                    <li>2018&ndash;2019&nbsp;&mdash; менеджер проекта предоставления бесплатной правовой помощи беженцам и искателям убежища, который реализуется БФ «Право на защиту» (исполнительный партнёр УВКБ ООН в Украине)
-                    </li>
-                    <li>2015-2017 – адвокат по стратегическим судебным делам Украинского Хельсинского союза по правам человека</li>
-                    <li>2011&ndash;2015&nbsp;&mdash; стал адвокатом и практиковал в г. Одесса</li>
-                    <li>2005&ndash;2011&nbsp;&mdash; юрисконсульт на предприятиях г. Одесса</li>
-                </span>
-            </ul>
-        </div>
-        <div class="team__picture oleksandr"><a href="https://erau.unba.org.ua/profile/14556" target="_blank"><img
-                src="img/Lapin.JPG" alt=""></a></div>
-        <div class="team__description">
-            <h3>Александр Лапин</h3>
-            <h5>Партнер</h5>
-            <div class="team__social grid">
-                <a href="https://erau.unba.org.ua/profile/14556" target="_blank"><img src="img/erau.svg" alt=""
-                                                                                      class='team__social-unba'></a>
-                <a href="https://twitter.com/OleksandrLapin" target="_blank"><img src="img/Twitter.svg"
-                                                                                  class='team__social-tw'
-                                                                                  alt=""></a>
-                <a href="https://www.linkedin.com/in/oleksandr-lapin/" target="_blank"><img src="img/Linkedin.svg"
-                                                                                            alt=""
-                                                                                            class='team__social-in'></a>
-            </div>
+        <ul class="psycho-couching">
+            <h4>Психологія та коучинг</h4>
+            <li>Повна конфіденційність</li>
+            <li>Перша сесія – безплатно</li>
+            <li>Онлайн або очно (Київ)</li>
 
-            <ul class="bio">
-                <li>2019-2021 &mdash; менеджер по стратегическим судебным делам касательно беженцев, искателей убежища и лиц без
-                    гражданства в БФ «Право на Защиту» (исполнительный партнёр УВКБ ООН в Украине).
-                </li>
-                <li>2017&ndash;2018&nbsp;&mdash; советник Министра внутренних дел Украины</li>
-                <span class="more">Больше...</span>
-                <span class="extension">
-                    <li>2014&ndash;2017&nbsp;&mdash; менеджер проекта бесплатной правовой помощи беженцам, искателям убежища и лицам без гражданства, который реализуется БФ «Право на Защиту» (исполнительный партнёр УВКБ ООН в Украине)
-                    </li>
-                    <li>2012&ndash;2014&nbsp;&mdash; преподаватель гражданско-правовых дисциплин Донецкого юридического института МВД Украины</li>
-                    <li>2010&ndash;2014&nbsp;&mdash; стал адвокатом и практиковал в г.Донецк</li>
-                    <li>2005&ndash;2010&nbsp;&mdash; консультант Артёмовского горрайонного суда Донецкой области</li>
-
-                    <li>2002-2004 &ndash; ведущий программы «Законность и правопорядок» на местном телевидении в г.Бахмут Донецкой области
-                    </li>
-                    <li>2003&nbsp;&mdash; стал членом Национального союза журналистом Украины</li>
-                    <li>2001&ndash;2002&nbsp;&mdash; репортёр газеты «События» в г.Бахмут Донецкой области</li>
-                </span>
-            </ul>
-        </div>
-    </div>
-    <!--    </div>-->
-</section>
-<!--./section team-->
-
-<!--section partners-->
-<section class="partners">
-    <div class="container grid">
-
+        </ul>
+        <ul class="autor-training">
+            <h4>Авторські тренінги</h4>
+            <p>Корпоративні:
+            <li>навчання тонкощам роботи у luxury та premium сегментах</li>
+            <li>розвиток емоційного інтелекту</li>
+            <li>навчання мистецтву продажів</li>
+            </p>
+            <p>Особисті:<br>
+            <li>гармонізація особистих відносин</li>
+            <li>розкриття таланту любити своє життя</li>
+            <li>підвищення особистої цінності</li>
+            </p>
+        </ul>
+        <div class="orange-button">Запис на сесію</div>
+        <div class="orange-button">Залишити заявку</div> <!--дубль кноки Зaпись на сессию-->
     </div>
 </section>
-<!--./section partners-->
 
-<!--section contacts-->
-<footer class="contacts" id="contacts">
+<footer class="contacts grid" id="contacts">
+    <h2>Контакти</h2>
     <div class="container grid">
         <div class="contacts__text">
-            <h4>МИ НЕ СЛЕДИМ ЗА ВАМИ</h4>
-            <p>
-                Во мрачные времена массовой слежки и цензуры, когда демократия умирает в темноте, вы всегда можете
-                положиться на адвокатов, которые не следят за вами. Мы относимся к вашей приватности серьёзно, как к
-                своей собственной. Этот вебсайт создан для просмотра приватно, безопасно и анонимно.
+            <p>Все краще у житті з нами трапляється випадково.<br>
+                Але для того, щоб ця випадковість з нами трапилася,<br>
+                потрібно дозволити їй відбутися.
             </p>
         </div>
-        <div class="contacts__text">
-            <h4>МЫ ПОМОГАЕМ</h4>
-            <p>
-                Мы считаем, что все журналисты и блогеры должны быть защищены, независимо от их политических взглядов,
-                вероисповедания, расы, этнической принадлежности, территориального происхождения, гражданства,
-                сексуальной ориентации и гендерной идентичности. Все, кто пострадал от цензуры и ущемления свободы слова
-                могут обратиться к нам и получить профессиональную правовую помощь.
-            </p>
-        </div>
-        <div class="contacts__text">
-            <h4 style="padding-left: 10px">СВЯЖИТЕСЬ С НАМИ:</h4>
-            <div class="contacts__icons grid">
-                <a class='mail' href="mailto:office@a15.org.ua">
-                    <img src="img/mail.svg" alt="" class="contacts__social-mail">
-                </a>
-                <a href="https://twitter.com/a15org " target="_blank" class="contacts__social-tw">
-                    <img src="img/Twitter-white.svg"
-                         class='social-item contacts__social-tw-icon'
-                         alt="">
-                </a>
-                <a href="https://t.me/a15org" target="_blank" class="contacts__social-tele">
-                    <img src="img/Telegram-white.svg"
-                         class='social-item contacts__social-tele-icon'
-                         alt="">
-                </a>
+        <div class="contacts__icons grid">
+            <a class='mail' href="mailto:office@a15.org.ua">
+                <img src="img/mail.svg" alt="" class="contacts__social-mail">
+            </a>
+            <a href="https://twitter.com/a15org " target="_blank" class="contacts__social-tw">
+                <img src="img/Twitter-white.svg"
+                     class='social-item contacts__social-tw-icon'
+                     alt="">
+            </a>
+            <div href="https://t.me/a15org" target="_blank" class="contacts__social-tele">
+                <img src="img/Telegram-white.svg"
+                     class='social-item contacts__social-tele-icon'
+                     alt="">
             </div>
         </div>
-        <div class="footer-rights">Все права защищены. a15 ©</div>
     </div>
+
+    <div class="footer-copy">Всі права захищені. Coach Partner ©</div>
 </footer>
+
+
+
 <!--./section contacts-->
+
+<!-- lower footer -->
+<!--<footer class="lower-footer">-->
+<!--    <div class="container">-->
+<!--        <div class="footer-copy">Всі права захищені. a15 ©</div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <script src="js/scripts.min.js"></script>
 
