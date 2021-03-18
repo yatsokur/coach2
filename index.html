@@ -35,10 +35,28 @@
 <link rel="stylesheet" href="css/main.min.css">
 <link rel="stylesheet" href="css/burger/burger.css">
 
+<!--Форма записи-->
+<div class="overlay appear" id="overlay"><!--overlay appear - how to do this?-->
+    <div class="overlay-content">
+        <form action="" class="form grid">
+            <img class='close-button' src="img/close-button.svg" alt="">
+<!--            <div class="close-button"><img src="img/close-button.svg" width="24" height="24"></div> - Альтернативное решение для кнопки-->
+            <h3 class="form-title">Запись на бесплатную сессию </h3>
+            <label for="form-name" class="form-description">Ваше имя: </label>
+            <input id="form-name" type="text"
+                   placeholder="Иванов Иван">
+            <label for="form-interest" class="form-description">Номер телефона: </label>
+            <input id="form-interest" type="text" placeholder="+38-050-555-55-55">
+            <div class="orange-button">Оставить заявку</div>
+        </form>
+    </div>
+</div>
+
+
 <!--nav-->
 <nav class="navbar" id="navbar">
     <div class="navigation grid">
-        <div class="logo"></div> <!--сделать кликабельным лого с #top-->
+        <div class="logo" id="top"></div> <!--сделать кликабельным лого с #top-->
         <div class="menu">
             <a href="#about">Обо мне</a>
             <a href="#services">Услуги</a>
@@ -46,9 +64,9 @@
             <a href="#contacts">Контакты</a>
         </div>
         <div class="lang-menu">
-            <a href="#ru">RU</a>
+            <a href="#top">RU</a> <!--реализовать режим вкл-выкл-->
             <span>|</span>
-            <a href="#ua">UA</a>
+            <a href="ua/index.html">UA</a>
         </div>
         <!-- language switcher -->
 <!--        <div class="lang-menu">-->
@@ -66,7 +84,7 @@
             </label>
             <ul class="menu__box">
                 <li><a class="menu__item" href="#about">Обо мне</a></li>
-                <li><a class="menu__item" href="#services">Услуги</a></li> <!--переименовать-->
+                <li><a class="menu__item" href="#services">Услуги</a></li>
                 <li><a class="menu__item" href="https://" target="_blank">Блог</a></li>
                 <li><a class="menu__item" href="#contacts">Контакты</a></li>
             </ul>
@@ -78,8 +96,8 @@
 <header class="main-header">
     <div class="container grid">
         <div class="tagline">
-            <p><span class="header-h1">Всё проще, чем кажется!</span></p> <!--<span class="blinking-cursor">|</span>-->
-            <a href="#about"> <!-- тут должна быть всплывающая Форма записи-->
+            <p><span class="header-h1">Всё проще, чем кажется!</span></p>
+            <a href="#overlay"> <!-- тут должна быть всплывающая Форма записи-->
                 <div class="orange-button">Запись на сессию</div>
             </a>
         </div>
@@ -104,7 +122,7 @@
 </section>
 
 <!--section footer-->
-<section class="services grid">
+<section class="services grid" id="services">
     <h2 class="services-title">Услуги</h2>
     <div class="container grid">
         <ul class="psycho-couching">
