@@ -33,9 +33,11 @@
     opacity: .95
     transition: .5s
     box-shadow: 0 0 5px rgba(0,0,0,0.5)
+.active
+  color: #aa7521
 
 .overlay
-  //display: none
+  display: none
   position: absolute
   left: 0
   top: 0
@@ -54,43 +56,45 @@
     justify-content: center
     align-items: center
   .form
-    z-index: 30
+    display: grid
+    grid-auto-rows: max-content
+    z-index: 30000
     position: fixed
     width: 450px
-    height: 400px
-    grid-template-columns: 1fr 1fr
-    grid-gap: 1em
+    height: 300px
     top: 50%
     left: 50%
-    margin-right: -50%
+    //margin-right: -50%
     transform: translate(-50%, -50%)
     background-color: #e7e7dc
     padding: 1rem
     opacity: 1
     font-weight: 700
     text-align: center
+    .title-close
+      display: grid
+      grid-template-columns: 3fr 0.5fr
+      .form-title
+        text-align: right
+        align-content: center
+      .close-button
+        //grid-column: 1/3
+        margin-top: 0.5rem
+        width: 0.9rem
+        float: right
+        cursor: pointer
+        opacity: 1
 
-
-    .close-button
-      grid-column: 1/3
-      margin-top: 0.1rem
-      margin-left: 90%
-      width: 0.7rem
-      float: right
-      cursor: pointer
-      opacity: 1
-      align-self: center
-    //.form h3
-      //margin-top: 0
-    .form-title
-      grid-column: 1/3
-      height: 1px
-      text-align: center
-      font-size: 25px
-      line-height: 0
-      grid-auto-rows: max-content //check
-
-
+    .form-container
+      grid-template-columns: 1fr 1fr
+      grid-gap: 2em
+      .form-title
+        grid-column: 1/3
+        height: 1px
+        text-align: center
+        font-size: 25px
+        line-height: 0
+        grid-auto-rows: max-content
     .orange-button
       grid-column: 1/3
       align-self: center
@@ -98,9 +102,6 @@
       height: 60px
       padding: 1rem
       margin-left: 25%
-      //разобраться с шириной строк
-
-
 
 
 //  navbar
@@ -124,14 +125,6 @@
       background-position: center
       background-size: contain
       background-repeat: no-repeat
-      //color: white
-      //padding: 1rem
-      //margin-left: 50px
-    //align-content: center
-    //font-size: 35px
-    //font-family: sans-serif
-    //transition: font-size .5s ease
-    //border-radius: 25px
     .menu
       padding: 1.5rem 0
       text-align: right
@@ -145,10 +138,10 @@
         font-size: 25px
         transition: all .5s ease
         &:hover
-          color: #f7a26c
+          color: #aa7521
           transition: all .5s ease
         &:active
-          color: #f7a26c
+          color: #aa7521
           transition: all .5s ease
     .lang-menu
       align-items: center
@@ -159,8 +152,7 @@
       padding: 1rem
       transition: all .5s ease
       .active
-        color: #aa7521 //вначале чтоб для всех
-
+        color: #aa7521
       a
         text-decoration: none
         color: white
@@ -168,10 +160,10 @@
         font-weight: 700
         transition: all .5s ease
         &:hover
-          color: #f7a26c
+          color: #aa7521
           transition: all .5s ease
         &:active
-          color: #f7a26c
+          color: #aa7521
           transition: all .5s ease
 
 .navbar-onscroll
@@ -206,22 +198,30 @@
         font-size: 20px
         transition: all .5s ease
         &:hover
-          color: #f7a26c
+          color: #aa7521
           transition: all .5s ease
         &:active
-          color: #f7a26c
+          color: #aa7521
           transition: all .5s ease
     .lang-menu
       align-items: center
       text-align: right
       margin: 1.2rem
       transition: all .5s ease
+      .active
+        color: #aa7521
       a
         font-weight: 700
         color: #153b47
         text-decoration: none
         font-size: 18px
         transition: all .5s ease
+        &:hover
+          color: #aa7521
+          transition: all .5s ease
+        &:active
+          color: #aa7521
+          transition: all .5s ease
 
 
 //header
@@ -229,10 +229,9 @@
   background: #ededed
   min-height: 100vh
   //padding-bottom: 0px
-
   .container
     grid-template-columns: 1fr 1.2fr
-    grid-auto-rows: 100vh //разобраться как увеличить
+    grid-auto-rows: 100vh
     max-width: none
     .tagline
       align-self: center
@@ -252,7 +251,7 @@
       background-repeat: no-repeat
 
 .about
-  background: #958b72
+  background: #3d5c6f
   min-height: 70vh
   .container
     h2
@@ -269,7 +268,7 @@
 
 
 .services
-  background-color: #e7e7dc
+  background-color: #ededed
   .services-title
     font-size: 50px
     padding-top: 20px
@@ -340,7 +339,7 @@
       grid-column: 1/4
 .contacts
   color: white
-  background-color: #3d5c6f
+  background-color: #151504
   h2
     color: white
     padding-top: 20px

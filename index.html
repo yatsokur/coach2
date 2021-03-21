@@ -39,15 +39,17 @@
 <div class="overlay appear" id="overlay"><!--overlay appear - how to do this?-->
     <div class="overlay-content">
         <form action="" class="form grid">
-            <img class='close-button' src="img/close-button.svg" alt="">
-<!--            <div class="close-button"><img src="img/close-button.svg" width="24" height="24"></div> - Альтернативное решение для кнопки-->
-            <h3 class="form-title">Запись на бесплатную сессию </h3>
-            <label for="form-name" class="form-description">Ваше имя: </label>
-            <input id="form-name" type="text"
-                   placeholder="Иванов Иван">
-            <label for="form-interest" class="form-description">Номер телефона: </label>
-            <input id="form-interest" type="text" placeholder="+38-050-555-55-55">
-            <div class="orange-button">Оставить заявку</div>
+            <div class="title-close subitems">
+                <div><h3 class="form-title">Запись на бесплатную сессию</h3></div>
+                <div><img class='close-button' src="img/close-button.svg" alt=""></div>
+            </div>
+            <div class="form-container grid">
+                <label for="form-name" class="form-description">Ваше имя: </label>
+                <input id="form-name" type="text" placeholder="Иванов Иван">
+                <label for="form-interest" class="form-description">Номер телефона: </label>
+                <input id="form-interest" type="text" placeholder="+38-050-555-55-55">
+                <div class="orange-button">Оставить заявку</div>
+            </div>
         </form>
     </div>
 </div>
@@ -64,18 +66,11 @@
             <a href="#contacts">Контакты</a>
         </div>
         <div class="lang-menu">
-            <a href="#top">RU</a> <!--реализовать режим вкл-выкл-->
+            <a href="#top" class="active">RU</a>
             <span>|</span>
-            <a href="ua/index.html">UA</a>
+            <a href="ua/index.html" class="">UA</a>
         </div>
-        <!-- language switcher -->
-<!--        <div class="lang-menu">-->
-<!--            &lt;!&ndash;            <label class="lang_label" for="languages">Мова:</label>&ndash;&gt;-->
-<!--            <select id="languages" name="languages" onChange="window.location.href=this.value">-->
-<!--                <option value="ru" selected>ru</option>-->
-<!--                <option value="ua/index.html">ua</option>-->
-<!--                </select>-->
-<!--        </div>-->
+
         <!-- hamburger menu-->
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox"/>
